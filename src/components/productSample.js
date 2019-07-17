@@ -35,7 +35,7 @@ module.exports ={
         "description": "GPX Poly 1",
         "availableSizes": ["X", "L", "XL"],
         "style": "Front tie dye print",
-        "price": 9.0,
+        "price": 9.00,
         "installments": 3,
         "currencyId": "USD",
         "currencyFormat": "$",

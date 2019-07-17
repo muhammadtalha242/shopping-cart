@@ -1,23 +1,19 @@
 import React from 'react';
 import DisplayItems from "./components/DisplayItems"
 import productSample from "./components/productSample"
+// import Item from "./components/Item"
 
 import './App.css';
 
 class App extends React.Component {
 
-  constructor(){
+  constructor() {
     super()
+    // this.loadSamples= this.loadSamples.bind(this);
+    // this.renderProduct= this.renderProduct.bind(this);
     this.state={
-      products:[]
+      products:productSample.products
     }
-  }
-
-  // sample is load as app component is mounted
-  componentDidMount(){
-    this.setState({
-      products : productSample
-    })
   }
 
   /**
@@ -28,12 +24,23 @@ class App extends React.Component {
   //     products : productSample
   //   })
   // }
+  // renderProduct(){
+  //   const array = this.state.products.products;
+
+  //   array.map((key,obj)=>{
+  //     return <Item key={key} object={obj}/>
+  // })
+  // }
 
 
   render(){
+    console.log("inside App render",this.state.products)
   return (
     <div>
+      {/* {this.loadSamples()} */}
+      {/* <button onClick={this.loadSamples}>laodSamples</button> */}
     <DisplayItems products={this.state.products}/>
+    {/* {this.renderProduct()} */}
     </div>
   );
 }
