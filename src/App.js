@@ -9,10 +9,11 @@ class App extends React.Component {
 constructor(){
   super();
   this.filterSizes = this.filterSizes.bind(this);
+  this.addToCart = this.addToCart.bind(this);
   this.state={
     products:productSample.products,
     filterData:productSample.products,
-    order :[]
+    order :{}
   };
 }
 filterSizes(match){
@@ -21,8 +22,11 @@ filterSizes(match){
    this.setState({filterData:match})
 }
 
+
 addToCart(key){
-  console.log(key)
+  const order = {...this.state.order};
+  order[key] = order[key] + 1 || 1;
+  this.setState({order});
 }
 
 
