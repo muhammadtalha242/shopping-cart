@@ -1,4 +1,5 @@
 import React from "react";
+import AddToCart from "./AddToCart";
 
 class Item extends React.Component{
 
@@ -20,6 +21,7 @@ class Item extends React.Component{
             <div className="display-item-investment">
             <span>or {object["installments"]} x</span>
             <b> {(object["price"]/object["installments"]).toFixed(2)}</b>
+            <AddToCart/>
             </div>
             </div>
             </div>
