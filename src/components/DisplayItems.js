@@ -2,28 +2,22 @@ import React from "react";
 import Item from "./Item"
 
 class DisplayItems extends React.Component{
-constructor(){
-    super()
-    this.renderProduct = this.renderProduct.bind(this);
-}
 
-renderProduct(){
-    const array = this.props.products.products;
-    let count =0;
-    console.log("counter: ",count++,array);
-    array.map((key,obj)=>{
-        return <Item key={key} object={obj}/>
-    })
-    }
 
     render(){
-       const array = this.props.products.products;
-
+         console.log("inside DisplayItem render",this.props.products)
+         const array=this.props.products;
         return(
-            <div>
-                <Item product={this.props.products.products}/>
+            <div>{
+                
 
-                {/* {this.renderProduct()} */}
+                array.map((object,key) =>{
+                   // console.log("this is key: ",key)
+                   // console.log("This is object: ",object)
+                  return  <Item key={key} object={object}/>
+               })}
+                {/* {this.renderProduct()}
+                <Item  object={this.props.products.products}/> */}
             </div>
         )
     }
