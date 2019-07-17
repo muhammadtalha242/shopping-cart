@@ -1,5 +1,6 @@
 import React from "react";
 import SizeButton from "./SizeButton";
+import Sort from "./Sort";
 class Sizes extends React.Component {
 
     render(){
@@ -8,7 +9,8 @@ class Sizes extends React.Component {
             <div className="filters">
                <span className="title">Sizes:</span> 
                 <SizeButton products = {this.props.products} filterSizes={this.props.filterSizes}/>
-            </div>
+                <Sort products = {this.props.products} filterSizes={this.props.filterSizes} />
+            </div> 
         )
     }
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import DisplayItems from "./components/DisplayItems"
 import productSample from "./components/productSample"
 import Sizes from "./components/Sizes"
-import Sort from "./components/Sort"
 import './App.css';
 
 class App extends React.Component {
@@ -12,10 +11,11 @@ constructor(){
   this.filterSizes = this.filterSizes.bind(this);
   this.state={
     products:productSample.products,
-    filterData:""
+    filterData:productSample.products,
   };
 }
 filterSizes(match){
+
   console.log(match)
    this.setState({filterData:match})
 }
@@ -23,16 +23,12 @@ filterSizes(match){
 
   render(){
 
-    console.log("inside App render",this.state.products)
   return (
-    <div>
-      {/* {this.loadSamples()} */}
-      {/* <button onClick={this.loadSamples}>laodSamples</button> */}
+    <div className="root">
 
       <Sizes products={this.state.products} filterSizes={this.filterSizes} />
-      <Sort/>
-      <DisplayItems products={this.state.products}/>
-      {/* {this.renderProduct()} */}
+     
+      <DisplayItems products={this.state.filterData}/>
 
     </div>
   );
