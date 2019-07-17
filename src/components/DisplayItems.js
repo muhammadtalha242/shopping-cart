@@ -1,10 +1,10 @@
 import React from "react";
 import Item from "./Item"
+import Sizes from "./Sizes";
 
 class DisplayItems extends React.Component{
 
-
-    render(){
+     render(){
          console.log("inside DisplayItem render",this.props.products)
          const array=this.props.products;
         return(
@@ -18,6 +18,7 @@ class DisplayItems extends React.Component{
                })}
                 {/* {this.renderProduct()}
                 <Item  object={this.props.products.products}/> */}
+
             </div>
         )
     }
