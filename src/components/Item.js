@@ -21,7 +21,7 @@ class Item extends React.Component{
             <div className="display-item-investment">
             <span>or {object["installments"]} x</span>
             <b> {(object["price"]/object["installments"]).toFixed(2)}</b>
-            <AddToCart/>
+            <AddToCart productKey={object["id"]} addToCart={this.props.addToCart}/>
             </div>
             </div>
             </div>

@@ -103,6 +103,10 @@ hr{
   border: none;
 }
 
+.display-item button.add-to-cart:hover{
+  background-color:rgb(180, 180, 35);
+}
+
 
 @keyframes App-logo-spin {
   from {

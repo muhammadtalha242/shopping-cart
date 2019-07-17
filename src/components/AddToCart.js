@@ -4,16 +4,18 @@ class AddToCart extends React.Component{
 
     constructor(){
         super();
-        this.addToCart = this.addToCart.bind(this);
+        this.inputHandler = this.inputHandler.bind(this);
       }
-      addToCart(match){
-        console.log("Clicked")
+
+      inputHandler(event){
+        this.props.addToCart(event.target.value)
       }
+
      render(){
 
         return(
             <div>
-                <button className="add-to-cart" key='1' onClick={this.addToCart} >Add to cart</button>
+                <button className="add-to-cart" key={this.props.productKey} value={this.props.productKey} onClick={this.inputHandler} >Add to cart</button>
             </div>
         )
     }
