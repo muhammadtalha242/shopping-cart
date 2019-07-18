@@ -11,6 +11,7 @@ constructor(){
   super();
   this.filterSizes = this.filterSizes.bind(this);
   this.addToCart = this.addToCart.bind(this);
+  this.removeFromOrder = this.removeFromOrder.bind(this);
   this.state={
     products:productSample.products,
     filterData:productSample.products,
@@ -26,6 +27,11 @@ addToCart(key){
   const order = {...this.state.order};
   order[key] = order[key] + 1 || 1;
   this.setState({order});
+}
+removeFromOrder(key) {
+  const order = {...this.state.order};
+  delete order[key];
+  this.setState({ order });
 }
 
 addToCart(key){
@@ -47,7 +53,7 @@ addToCart(key){
 
 =======
       <DisplayItems products={this.state.filterData} addToCart={this.addToCart}/>
-      <Cart orders={this.state.order} products={this.state.products}/>
+      <Cart orders={this.state.order} products={this.state.products} removeFromOrder={this.removeFromOrder}/>
       
 >>>>>>> master
     </div>
