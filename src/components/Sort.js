@@ -18,6 +18,9 @@ class Sort extends React.Component {
         else if(selectedValue === "Highest to Lowest"){
            matched =  products.sort((a,b)=> (b.price - a.price))
         }
+        else if(selectedValue === "Select"){
+            matched =  this.props.products
+         }
         this.props.filterSizes(matched);
     }
     render(){

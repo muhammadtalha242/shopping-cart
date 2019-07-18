@@ -1,12 +1,12 @@
 import React from "react";
-
+import AddToCart from "./AddToCart";
 class Item extends React.Component{
 
     render(){
     const object = this.props.object;
     const isFreeShipping = object["isFreeShipping"] ? "Free Shipping":"No Free Shipping";
     const price = object["price"].toString();
-
+    
 
         return(
             <div  className="display-item">
@@ -20,6 +20,7 @@ class Item extends React.Component{
             <div className="display-item-investment">
             <span>or {object["installments"]} x</span>
             <b> {(object["price"]/object["installments"]).toFixed(2)}</b>
+            <AddToCart productKey={object["id"]} addToCart={this.props.addToCart}/>
             </div>
             </div>
             </div>
