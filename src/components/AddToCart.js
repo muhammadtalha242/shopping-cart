@@ -6,7 +6,10 @@ class AddToCart extends React.Component{
         super();
         this.inputHandler = this.inputHandler.bind(this);
       }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
       inputHandler(event){
         this.props.addToCart(event.target.value)
       }

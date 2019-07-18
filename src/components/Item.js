@@ -1,13 +1,16 @@
 import React from "react";
 import AddToCart from "./AddToCart";
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 class Item extends React.Component{
 
     render(){
     const object = this.props.object;
     const isFreeShipping = object["isFreeShipping"] ? "Free Shipping":"No Free Shipping";
     const price = object["price"].toString();
-
+    
 
         return(
             <div  className="display-item">

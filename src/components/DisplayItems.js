@@ -12,7 +12,11 @@ class DisplayItems extends React.Component{
 
                 array.map((object,key) =>{
                   
+<<<<<<< HEAD
                   return  <Item key={key} object={object} addToCart={this.props.addToCart}/>
+=======
+                  return  <Item key={key} object={object} addToCart={this.props.addToCart} data-key={key}/>
+>>>>>>> master
                })}
                
             </div>
