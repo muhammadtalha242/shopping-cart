@@ -11,7 +11,8 @@ module.exports ={
         "installments": 9,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/6b/52/47/6b52475e207f0ff4ef7488770e1c05b9.jpg"
       },
   
       {
@@ -25,7 +26,8 @@ module.exports ={
         "installments": 5,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/11/67/67/1167672eda63244c3901a5f4af734995.jpg"
       },
   
       {
@@ -39,7 +41,8 @@ module.exports ={
         "installments": 3,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/f9/23/e7/f923e7486a7d3b5308b9353c2c8e1aa4.jpg"
       },
   
       {
@@ -53,7 +56,8 @@ module.exports ={
         "installments": 5,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/b4/02/cf/b402cfcdcbac75e400930ed09a14affd.jpg"
       },
   
       {
@@ -67,7 +71,8 @@ module.exports ={
         "installments": 3,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/83/97/3f/83973fd768b45fd578c6b68714e60b3b.jpg"
       },
   
       {
@@ -81,7 +86,8 @@ module.exports ={
         "installments": 5,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/00/e7/a9/00e7a916531c9f60a8b99b5aa0459047.jpg"
       },
   
       {
@@ -95,7 +101,8 @@ module.exports ={
         "installments": 9,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/88/dd/b7/88ddb70f54d216ec87c168b86c7f70ba.jpg"
       },
   
       {
@@ -109,7 +116,8 @@ module.exports ={
         "installments": 9,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/5b/97/a7/5b97a7518e8b970773528d585796cdc8.jpg"
       },
   
       {
@@ -123,7 +131,8 @@ module.exports ={
         "installments": 7,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/4d/21/7e/4d217e50a60a465506fcecaddab9fb79.jpg"
       },
   
       {
@@ -137,7 +146,8 @@ module.exports ={
         "installments": 7,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/20/dc/25/20dc2537316a2675e0eb477546242875.jpg"
       },
   
       {
@@ -151,7 +161,8 @@ module.exports ={
         "installments": 12,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": false
+        "isFreeShipping": false,
+        "image":"https://i.pinimg.com/564x/d6/d0/90/d6d09024b136c0a379ee9763e3d19e4c.jpg"
       },
   
       {
@@ -165,7 +176,8 @@ module.exports ={
         "installments": 9,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": false
+        "isFreeShipping": false,
+        "image":"https://i.pinimg.com/564x/15/1f/19/151f19e35860454ae32ff9bbb5cebf9d.jpg"
       },
   
       {
@@ -179,7 +191,8 @@ module.exports ={
         "installments": 0,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/e1/f5/06/e1f506891f9afc948c16f806dc2edcaa.jpg"
       },
   
       {
@@ -193,7 +206,8 @@ module.exports ={
         "installments": 4,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/3a/6c/20/3a6c201e4f55c3dc9374d4e3082882eb.jpg"
       },
   
       {
@@ -207,7 +221,8 @@ module.exports ={
         "installments": 4,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": false
+        "isFreeShipping": false,
+        "image":"https://i.pinimg.com/564x/c9/8c/b1/c98cb17e9ad21ec799f9092ec74cbd36.jpg"
       },
   
       {
@@ -221,7 +236,8 @@ module.exports ={
         "installments": 5,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/ab/d8/db/abd8dbead5d13ec53b7e94cfea401263.jpg"
       },
   
       {
@@ -235,7 +251,8 @@ module.exports ={
         "installments": 9,
         "currencyId": "USD",
         "currencyFormat": "$",
-        "isFreeShipping": true
+        "isFreeShipping": true,
+        "image":"https://i.pinimg.com/564x/a2/ad/ec/a2adecaa707a8de185262c55218e3f7e.jpg"
       }
     ]
   }
