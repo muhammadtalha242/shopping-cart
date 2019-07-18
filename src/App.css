@@ -21,6 +21,7 @@
   padding: 0;
   width:100%;
   display: flex;
+  background-color: rgba(251, 255, 255, 0.52)
 }
 .body{
   padding: 0;
@@ -50,7 +51,7 @@
 }
 
 .display-item-container{
-  border : 5px solid black; 
+  
   width: 60%;
   margin-left: 6%;
   display: flex;
@@ -65,8 +66,15 @@
   border : 1px solid black;
   margin: 1%;
   box-sizing: border-box;
-  cursor: pointer
+  cursor: pointer;
+
+  transition: 30ms;
 }
+ 
+.display-item:hover{
+  transform: scale(1.15) translateZ(0);
+}
+ 
 
 .display-item-title{
   text-align: center;
@@ -98,17 +106,9 @@ hr{
   width: 100%;
   background-color: rgb(27, 26, 32);
   color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-top: 20%;
   cursor: pointer;
   border: none;
-<<<<<<< HEAD
-}
-
-.display-item button.add-to-cart:hover{
-  background-color:rgb(180, 180, 35);
-}
-
-=======
   
 }
 .display-item button.add-to-cart:hover{
@@ -121,7 +121,6 @@ hr{
   margin-left: 1%;
   width: 20%;
 }
->>>>>>> master
 
 @keyframes App-logo-spin {
   from {
