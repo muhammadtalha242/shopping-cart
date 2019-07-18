@@ -2,6 +2,21 @@ import React from "react";
 import AddToCart from "./AddToCart";
 class Item extends React.Component{
 
+    constructor(){
+        super();
+        this.freeShipping = this.freeShipping.bind(this);
+        this.freeShippingRemove = this.freeShippingRemove.bind(this);
+      }
+
+    freeShipping(){
+        const header  = document.querySelector(".display-item-shipping");
+        header.classList.add("display-item-shipping-hover")
+    }
+    freeShippingRemove(){
+        const header  = document.querySelector(".display-item-shipping");
+        header.classList.remove("display-item-shipping-hover")
+    }
+
     render(){
     const object = this.props.object;
     const isFreeShipping = object["isFreeShipping"] ? "Free Shipping":"No Free Shipping";
@@ -9,7 +24,7 @@ class Item extends React.Component{
     
 
         return(
-            <div  className="display-item">
+            <div  className="display-item" onMouseEnter={() => this.freeShipping()} onMouseLeave={() => this.freeShippingRemove()}>
                
             <div className="display-item-shipping">{isFreeShipping}</div>
             <img src={object["image"]} width="100%" height="270px"  alt={object["title"]}/> 
