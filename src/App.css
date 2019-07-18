@@ -39,6 +39,7 @@
   padding: 0;
   width:100%;
   display: flex;
+  background-color: rgba(251, 255, 255, 0.52)
 }
 .body{
   padding: 0;
@@ -69,13 +70,13 @@
 }
 
 .display-item-container{
-  border : 5px solid black; 
   width: 60%;
   margin-left: 6%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 5%
+  margin-top: 5%;
+  
 
 }
 
@@ -84,7 +85,11 @@
   border : 1px solid black;
   margin: 1%;
   box-sizing: border-box;
-  cursor: pointer
+  cursor: pointer;
+  transition: 30ms;
+}
+.display-item:hover{
+  transform: scale(1.15) translateZ(0);
 }
 
 .display-item-title{
@@ -117,7 +122,7 @@ hr{
   width: 100%;
   background-color: rgb(27, 26, 32);
   color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-top: 20%;
   cursor: pointer;
   border: none;
   
@@ -126,12 +131,67 @@ hr{
   background-color: rgb(180,180,35);
 }
 
-.cart{
+.cart-container{
   border: 2px solid rgb(27, 26, 32);
   margin-top: 5%;
   margin-left: 1%;
   width: 20%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #1b1a20;
+  box-sizing: border-box;
 }
+
+
+.display-product{
+  vertical-align: middle;
+    width: 15%;
+    margin-right: 3%;
+
+
+}
+.del-icon{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 5%;
+    border-radius: 50%;
+    position: absolute;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+    color: #d0d0d4;
+}
+.product-title{
+  color: #ececec;
+    margin: 4.5%;
+}
+
+.total{
+  color: #d0d0d4
+}
+.product{
+  position: relative;
+  box-sizing: border-box;
+  padding: 5%;
+  transition: background-color .2s,opacity .2s;
+  display: flex;
+
+}
+
+
+.display-discp{
+  color: #5b5a5e;
+    margin: 0;
+    width: 50%;
+}
+.display-price{
+  color: #5b5a5e;
+}
+
 
 @keyframes App-logo-spin {
   from {
