@@ -202,6 +202,16 @@ hr {
   font-size: x-large;
   border-bottom: 3px solid #000;
 }
+.checkout{   
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(27, 26, 32);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+}
+ 
 
 @keyframes App-logo-spin {
   from {
