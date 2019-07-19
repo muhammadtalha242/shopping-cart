@@ -1,9 +1,5 @@
 import React from "react";
 import AddToCart from "./AddToCart";
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 class Item extends React.Component{
 
     constructor(){
