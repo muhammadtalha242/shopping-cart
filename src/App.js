@@ -41,6 +41,7 @@ class App extends React.Component {
           products={this.state.filterData}
           addToCart={this.addToCart}
         />
+        
         <Cart
           orders={this.state.order}
           products={this.state.products}

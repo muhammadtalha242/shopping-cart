@@ -84,7 +84,8 @@ class Cart extends React.Component {
     return (
       <div className="cart-container">
         <div className="cart-header">
-          <div className="order"> </div>
+       
+          <div className="order">Shopping Cart </div>
         </div>
 
         <div className="cart-content">{orderIds.map(this.randerProduct)}</div>
