@@ -2,12 +2,11 @@ import React from 'react';
 import DisplayItems from "./components/DisplayItems"
 import productSample from "./components/productSample"
 import Sizes from "./components/Sizes"
-import Cart from "./components/Cart"
+import Cart from "./components/Cart/Cart"
 import Header from "./components/Header"
 import './App.css';
 
 class App extends React.Component {
-
   constructor() {
     super();
     this.filterSizes = this.filterSizes.bind(this);
@@ -20,9 +19,8 @@ class App extends React.Component {
     };
   }
   filterSizes(match) {
-
-    console.log(match)
-    this.setState({ filterData: match })
+    console.log(match);
+    this.setState({ filterData: match });
   }
   addToCart(key) {
     const order = { ...this.state.order };
@@ -36,20 +34,25 @@ class App extends React.Component {
   }
 
   render() {
-
     return (
       <div className="header">
         <Header />
-        <div className="root">
 
+        <div className="root">
           <Sizes products={this.state.products} filterSizes={this.filterSizes} />
 
-          <DisplayItems products={this.state.filterData} addToCart={this.addToCart} />
-          <Cart orders={this.state.order} products={this.state.products} removeFromOrder={this.removeFromOrder} />
-
+          <DisplayItems
+            products={this.state.filterData}
+            addToCart={this.addToCart}
+          />
+          <Cart
+            orders={this.state.order}
+            products={this.state.products}
+            removeFromOrder={this.removeFromOrder} />
         </div>
       </div>
     );
   }
 }
-export default App
+
+export default App;
