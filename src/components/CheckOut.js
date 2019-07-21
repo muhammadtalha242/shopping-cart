@@ -3,10 +3,7 @@ import React from "react";
 
 class CheckOut extends React.Component {
  
-  constructor(props){
-    super(props);
-    console.log(props);
-  }
+  
 
   render() {
     return (
