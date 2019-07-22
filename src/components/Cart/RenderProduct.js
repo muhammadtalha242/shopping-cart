@@ -1,14 +1,14 @@
 import React from "react"
-import Icon from "../icon/closeIcon.png";
-import { formatPrice } from "../helpers.js";
-
+import Icon from "../../icon/closeIcon.png";
+import { formatPrice } from "../../helpers.js";
+import "./renderProduct.css";
 
 class RanderProduct extends React.Component {
     render(){
      const product = this.props.product;
     const count = this.props.count;
      const orderId= this.props.orderId;
-
+    console.log(orderId);
     return (
         <div key={this.props.orderId} className="product">
             <img

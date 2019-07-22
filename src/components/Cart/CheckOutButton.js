@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from 'react-router-dom'
-
+import "./checkOutButton.css"
 class CheckOutButton extends React.Component {
 
     constructor(){
@@ -16,7 +16,7 @@ class CheckOutButton extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.addHistoy}>Add to cart</button>
+                <button className="check-out" onClick={this.addHistoy}>Check Out</button>
             </div>
         )
     }

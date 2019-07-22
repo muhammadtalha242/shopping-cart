@@ -1,0 +1,50 @@
+
+.del-icon {
+    display: inline-block;
+    /* content: "\00d7"; This will render the 'X' */
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 5%;
+    border-radius: 50%;
+    position: absolute;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin-right: -12px;
+    margin-top: -3px;
+    z-index: 2;
+    cursor: pointer;
+    color: #d0d0d4;
+    background-image: image(
+      "/home/abbas/Desktop/shopping-cart/src/icon/closeIcon.png"
+    );
+  }
+  .product-title {
+    font-size: 12px;
+    margin-left: 9.5%;
+    width: 100%;
+  }
+  .title-product {
+    margin-left: 10px;
+  }
+
+  .display-product {
+    vertical-align: middle;
+    width: 15%;
+    margin-right: 3%;
+  }  
+  .price-right {
+    margin-left: 11px;
+  }
+  .product {
+    position: relative;
+    box-sizing: border-box;
+    padding: 5%;
+    transition: background-color 0.2s, opacity 0.2s;
+  }
+  .display-discp {
+    color: #5b5a5e;
+    margin: 0;
+    width: 50%;
+  }
+  

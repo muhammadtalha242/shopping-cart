@@ -1,0 +1,10 @@
+.add-to-cart {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(27, 26, 32);
+    color: rgb(255, 255, 255);
+    margin-top: 20%;
+    cursor: pointer;
+    border: none;
+  }

@@ -1,7 +1,9 @@
 import React from "react";
-import RenderProduct from '../RenderProduct';
+import RenderProduct from './RenderProduct';
 import { formatPrice } from "../../helpers";
-import CheckOutButton from "../CheckOutButton";
+import CheckOutButton from "./CheckOutButton";
+import "./cart.css";
+
 class Cart extends React.Component {
   constructor() {
     super();
@@ -31,6 +33,7 @@ class Cart extends React.Component {
     return total;
   }
 
+
   render() {
     const orderIds = Object.keys(this.props.orders);
 
@@ -43,9 +46,8 @@ class Cart extends React.Component {
         <div className="cart-content">{
           orderIds.map((key) => {
             const product = this.idFinding(key);
-            console.log(product);
             const count = this.props.orders[key];
-            return <RenderProduct key={key} orderid={key} product={product} count={count}/>
+            return <RenderProduct key={key} orderId={key} product={product} count={count} removeFromOrder={this.props.removeFromOrder}/>
           })}</div>
 
         <div className="cart-footer">

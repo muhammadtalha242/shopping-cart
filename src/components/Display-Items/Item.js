@@ -11,7 +11,7 @@ class Item extends React.Component {
 
 
         return (
-            <div className="display-item" >
+            <div className="display-item " >
 
                 <div className="display-item-shipping">{isFreeShipping}</div>
                 <img src={object["image"]} width="100%" height="270px" alt={object["title"]} />

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import CheckOut from "./components/CheckOut";
+import CheckOut from "./components/Check-out/CheckOut";
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route} from "react-router-dom";
 
@@ -14,9 +14,7 @@ const Root = () =>{
         <Route exact path="/" component={App}/>
         <Route 
         path="/HomePage" 
-        render={(props) => <CheckOut {...props} />} 
-/>
-        {/* <Route path="/HomePage" component={CheckOut}   /> */}
+        render={(props) => <CheckOut {...props} />} />
         </div>
         </BrowserRouter>
     )
