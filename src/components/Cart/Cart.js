@@ -19,7 +19,8 @@ class Cart extends React.Component {
     }
   }
 
-
+  
+  
 
   renderPrice(orderIds) {
     const total = orderIds.reduce((prevTotal, key) => {
@@ -39,7 +40,7 @@ class Cart extends React.Component {
 
     const total = this.renderPrice(orderIds);
     return (
-      <div className="cart-container">
+      <div className="cart-right">
         <div className="cart-header">
           <div className="order">Shopping Cart </div>
         </div>
@@ -55,8 +56,9 @@ class Cart extends React.Component {
             <strong>Total: </strong>
             <span className="total-price">{formatPrice(total)}</span>
           </div>
-          <CheckOutButton/>
+          <CheckOutButton orders={this.props.orders} idFinding={this.idFinding} removeFromOrder={this.props.removeFromOrder}/>
         </div>
+        {/* <button onClick={this.toggleCart}>press Me</button> */}
       </div>
     );
   }

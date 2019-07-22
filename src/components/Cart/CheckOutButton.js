@@ -8,7 +8,8 @@ class CheckOutButton extends React.Component {
         this.addHistoy= this.addHistoy.bind(this);
     }
     addHistoy(){
-        this.props.history.push("/HomePage");
+        console.log(this.props.orders);
+        this.props.history.push(`/HomePage/${JSON.stringify(this.props.orders)}`);
         
     }
 

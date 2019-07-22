@@ -5,17 +5,20 @@ import Sizes from "./components/Sort-Buttons/Sizes"
 import Cart from "./components/Cart/Cart"
 import Header from "./components/Header/Header"
 import './App.css';
-
+import shoppingCart from "./icon/shopping-cart.png"
 class App extends React.Component {
   constructor() {
     super();
     this.filterSizes = this.filterSizes.bind(this);
     this.addToCart = this.addToCart.bind(this);
     this.removeFromOrder = this.removeFromOrder.bind(this);
+    this.toggleCart = this.toggleCart.bind(this);
+    
     this.state = {
       products: productSample.products,
       filterData: productSample.products,
-      order: {}
+      order: {},
+      isShowing:false
     };
   }
   filterSizes(match) {
@@ -34,7 +37,27 @@ class App extends React.Component {
     console.log("Deleted")
     this.setState({ order });
   }
+   
 
+  toggleCart(){
+    const cart= document.getElementsByClassName("cart-right");
+    const cart2 =document.getElementsByClassName("cart-container");
+    let showing = this.state.isShowing;
+    if(showing){
+      cart2[0].classList.add("cart-right");
+      cart[0].classList.remove("cart-container");
+      showing = false;
+      this.setState({isShowing: showing})
+    }
+    else {
+      cart[0].classList.add("cart-container");
+      cart2[0].classList.remove("cart-right");      
+      showing = true;
+      this.setState({isShowing: showing})
+
+    }
+    
+  }
   render() {
     return (
       <div className="header">
@@ -51,6 +74,14 @@ class App extends React.Component {
             orders={this.state.order}
             products={this.state.products}
             removeFromOrder={this.removeFromOrder} />
+            <img
+            src={shoppingCart}
+            className="toggle-button"
+            onClick={() => this.toggleCart()}
+            width="50px"
+            height="50px"
+            alt="Shopping Cart"
+        /> 
         </div>
       </div>
     );

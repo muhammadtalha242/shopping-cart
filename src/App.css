@@ -50,7 +50,7 @@
 }
 
 .display-item-container {
-  width: 60%;
+  width: 100%;
   margin-left: 6%;
   display: flex;
   flex-direction: row;
@@ -107,28 +107,6 @@ hr {
   background-color: rgb(180, 180, 35);
 }
 
-.cart-container {
-  border: 2px solid rgb(27, 26, 32);
-  margin-top: 5%;
-  margin-left: 1%;
-  margin-right: 3%;
-  width: 20%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.total {
-  font-weight: 600;
-  border-bottom: 3px solid #000;
-  border-top: 3px double #000;
-  padding: 14px;
-}
-.total-price {
-  padding-left: 140px;
-  font-size: 2rem;
-}
-
-
 
 .display-price {
   color: #5b5a5e;
@@ -151,13 +129,12 @@ hr {
   cursor: pointer;
   border: none;
 }
- 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-button{
+  position: sticky;
+  top:0;
+  right: 2%;
+  margin-top: 1%;
+  width: 50px;
+  height: 50px;
 }

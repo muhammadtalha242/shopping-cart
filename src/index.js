@@ -13,7 +13,7 @@ const Root = () =>{
         <div className="">
         <Route exact path="/" component={App}/>
         <Route 
-        path="/HomePage" 
+        path="/HomePage/:Orders" 
         render={(props) => <CheckOut {...props} />} />
         </div>
         </BrowserRouter>

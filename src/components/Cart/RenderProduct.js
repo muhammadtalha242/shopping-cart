@@ -8,7 +8,7 @@ class RanderProduct extends React.Component {
      const product = this.props.product;
     const count = this.props.count;
      const orderId= this.props.orderId;
-    console.log(orderId);
+    
     return (
         <div key={this.props.orderId} className="product">
             <img

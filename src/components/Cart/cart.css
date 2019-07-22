@@ -15,6 +15,8 @@
     border: none;
   }
   .cart-container {
+    position: unset;
+    right:0px;
     border: 2px solid rgb(27, 26, 32);
     margin-top: 5%;
     margin-left: 1%;
@@ -23,6 +25,22 @@
     height: 100%;
     box-sizing: border-box;
   }  
+  .cart-right{
+    position: absolute;
+    right: -500px;
+    border: 2px solid rgb(27, 26, 32);
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 3%;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+
+  }
+  .cart-left{
+    right:0px; 
+   }
+
   .total {
     font-weight: 600;
     border-bottom: 3px solid #000;
