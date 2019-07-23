@@ -6,30 +6,36 @@ import Cart from "./components/Cart/Cart"
 import Header from "./components/Header/Header"
 import './App.css';
 import shoppingCart from "./icon/shopping-cart.png"
+
 class App extends React.Component {
   constructor() {
     super();
-    this.filterSizes = this.filterSizes.bind(this);
+    this.filterSizes = this.filterSizes.bind(this);  
     this.addToCart = this.addToCart.bind(this);
     this.removeFromOrder = this.removeFromOrder.bind(this);
-    this.toggleCart = this.toggleCart.bind(this);
+    this.toggleCart = this.toggleCart.bind(this);                   //dispaly and hide cart component 
     
     this.state = {
-      products: productSample.products,
-      filterData: productSample.products,
-      order: {},
-      isShowing:false
+      products: productSample.products,                 //Product sample Data
+      filterData: productSample.products,             //Data after applying sort and filters  
+      order: {},                                      //contain Order id and count 
+      isShowing:false                                 //To maintain state of the cart component
     };
   }
+
+  //To update state of filterData
   filterSizes(match) {
     console.log(match);
     this.setState({ filterData: match });
   }
+
+    //To update state of order
   addToCart(key) {
     const order = { ...this.state.order };
     order[key] = order[key] + 1 || 1;
     this.setState({ order });
   }
+    //To Remove and order 
   removeFromOrder(key) {
     console.log("inside remove fnction (key):", key );
     const order = { ...this.state.order };
@@ -39,6 +45,7 @@ class App extends React.Component {
   }
    
 
+  //dispaly and hide cart component
   toggleCart(){
     const cart= document.getElementsByClassName("cart-right");
     const cart2 =document.getElementsByClassName("cart-container");

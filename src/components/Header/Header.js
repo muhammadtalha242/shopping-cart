@@ -60,12 +60,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const style = {
+  background: '#000000',
+  
+};
 export default function SearchAppBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={style}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -76,7 +80,7 @@ export default function SearchAppBar() {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            retailsy
+            <span className="store-name">Retailsy </span> 
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
