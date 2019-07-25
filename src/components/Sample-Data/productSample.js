@@ -12,7 +12,7 @@ module.exports ={
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "image":"https://i.pinimg.com/564x/6b/52/47/6b52475e207f0ff4ef7488770e1c05b9.jpg"
+      "image":"https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     },
 
     {
@@ -763,3 +763,5 @@ module.exports ={
     }
   ]
 }
+
+//
