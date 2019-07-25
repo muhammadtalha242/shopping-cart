@@ -138,7 +138,7 @@ class App extends React.Component {
     else {
       // console.log(products);
       return (
-        <div className="header">
+        <div className="header">  
           <Header />
 
           <div className="root">
