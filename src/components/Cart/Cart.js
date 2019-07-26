@@ -12,7 +12,7 @@ class Cart extends React.Component {
 
   idFinding(key) {
     const products = this.props.products;
-    for (var i = 0; i < 17; i++) {
+    for (var i = 0; i < products.length; i++) {
       if (products[i]["id"].toString() === key) {
         return products[i];
       }
@@ -56,7 +56,8 @@ class Cart extends React.Component {
             <strong>Total: </strong>
             <span className="total-price">{formatPrice(total)}</span>
           </div>
-          <CheckOutButton orders={this.props.orders} idFinding={this.idFinding} removeFromOrder={this.props.removeFromOrder}/>
+          {/* <CheckOutButton orders={this.props.orders} idFinding={this.idFinding} removeFromOrder={this.props.removeFromOrder}/> */}
+          <CheckOutButton  idFinding={this.idFinding} {...this.props}/>
         </div>
         {/* <button onClick={this.toggleCart}>press Me</button> */}
       </div>

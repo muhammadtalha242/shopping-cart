@@ -6,7 +6,8 @@ class CheckOut extends React.Component {
   
 
   render() {
-    console.log(JSON.parse(this.props.match.params.orders));
+    
+    console.log("this is in checkOut",JSON.parse (this.props.match.params.Orders));
     return (
       <div >
         <img src="https://i.pinimg.com/564x/11/67/67/1167672eda63244c3901a5f4af734995.jpg" alt="Test"/>

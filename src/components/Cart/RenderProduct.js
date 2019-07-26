@@ -5,11 +5,13 @@ import "./renderProduct.css";
 
 class RanderProduct extends React.Component {
     render(){
+   
      const product = this.props.product;
     const count = this.props.count;
      const orderId= this.props.orderId;
     
     return (
+        
         <div key={this.props.orderId} className="product">
             <img
                 src={Icon}
@@ -18,7 +20,9 @@ class RanderProduct extends React.Component {
                 width="10px"
                 alt="Close Icon"
             />
+            
             <div className="display-product">
+              
                 <img
                     src={product["image"]}
                     className="img-float"

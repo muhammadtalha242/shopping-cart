@@ -254,20 +254,40 @@ module.exports ={
       "isFreeShipping": true,
       "image":"https://i.pinimg.com/564x/a2/ad/ec/a2adecaa707a8de185262c55218e3f7e.jpg"
     },
+
+
+    //ERROR DEBUGGING //DONE :D   
     {
       "id": 17,
-      "sku": 12064273040195392,
-      "title": "Cat Tee Black T-Shirt",
-      "description": "4 MSL",
-      "availableSizes": ["S", "XS"],
-      "style": "Black with custom print",
-      "price": 10.9,
-      "installments": 9,
+      "sku": 5619496040738316,
+      "title": "Tso 3D Black T-Shirt",
+      "description": "",
+      "availableSizes": ["XL"],
+      "style": "Azul escuro",
+      "price": 18.7,
+      "installments": 4,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "image":"https://i.pinimg.com/564x/6b/52/47/6b52475e207f0ff4ef7488770e1c05b9.jpg"
+      "isFreeShipping": false,
+      "image":"https://cdn.pixabay.com/photo/2017/02/12/21/29/false-2061132_960_720.png"
     },
+
+    //ERROR 
+
+    // {
+    //   "id": 17,
+    //   "sku": 12064273040195392,
+    //   "title": "Cat Tee Black T-Shirt",
+    //   "description": "4 MSL",
+    //   "availableSizes": ["S", "XS"],
+    //   "style": "Black with custom print",
+    //   "price": 10.9,
+    //   "installments": 9,
+    //   "currencyId": "USD",
+    //   "currencyFormat": "$",
+    //   "isFreeShipping": true,
+    //   "image":"https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    // },
 
     {
       "id": 18,
@@ -507,20 +527,21 @@ module.exports ={
       "currencyFormat": "$",
       "isFreeShipping": true,
       "image":"https://i.pinimg.com/564x/a2/ad/ec/a2adecaa707a8de185262c55218e3f7e.jpg"
-    },{
-      "id": 34,
-      "sku": 12064273040195392,
-      "title": "Cat Tee Black T-Shirt",
-      "description": "4 MSL",
-      "availableSizes": ["S", "XS"],
-      "style": "Black with custom print",
-      "price": 10.9,
-      "installments": 9,
-      "currencyId": "USD",
-      "currencyFormat": "$",
-      "isFreeShipping": true,
-      "image":"https://i.pinimg.com/564x/6b/52/47/6b52475e207f0ff4ef7488770e1c05b9.jpg"
     },
+    // {
+    //   "id": 34,
+    //   "sku": 12064273040195392,
+    //   "title": "Cat Tee Black T-Shirt",
+    //   "description": "4 MSL",
+    //   "availableSizes": ["S", "XS"],
+    //   "style": "Black with custom print",
+    //   "price": 10.9,
+    //   "installments": 9,
+    //   "currencyId": "USD",
+    //   "currencyFormat": "$",
+    //   "isFreeShipping": true,
+    //   "image":"https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    // },
 
     {
       "id": 35,
