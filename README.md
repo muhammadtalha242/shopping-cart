@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built using React. It shows a demonstration of how shopping page is created using React.
+
 
 ## Available Scripts
 
