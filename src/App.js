@@ -6,7 +6,7 @@ import Header from "./components/Header/Header"
 import './App.css';
 import shoppingCart from "./icon/shopping-cart.png"
 import axios from "axios";
-// import sampleProductes from "./components/Sample-Data/productSample"
+import sampleProductes from "./components/Sample-Data/productSample"
 class App extends React.Component {
   constructor() {
     super();
@@ -21,9 +21,9 @@ class App extends React.Component {
       isShowing: false,                              //To maintain state of the cart component
 
       error: null,
-      isLoaded: false,
-      products: [],
-      filterData:  []
+      isLoaded: true,
+      products: sampleProductes.products,
+      filterData:  sampleProductes.products
     };
   }
 
@@ -79,7 +79,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // this.fetchProducts("https://api.myjson.com/bins/l37cp")    
-    this.axiosProducts("https://api.myjson.com/bins/xaydd")
+    // this.axiosProducts("https://api.myjson.com/bins/xaydd")
 
   }
 
